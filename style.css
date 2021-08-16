@@ -1,0 +1,267 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main h1 {
+  font: normal 50px "Montserrat", sans-serif;
+}
+
+.main ul li a {
+  text-decoration: none;
+}
+
+.main ul li a span img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.main ul li a span img:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contenedoraccion .contenedoraccion__titulo {
+  font: normal 50px "Montserrat", sans-serif;
+}
+
+.contenedoraccion .contenedoraccion__lista li .listalink .listalink_carta {
+  overflow: hidden;
+  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contenedoraccion .contenedoraccion__lista li .listalink .listalink_carta img {
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.contenedoraccion .contenedoraccion__lista li .listalink .listalink_carta img:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contenedoraccion .contenedoraccion__lista li .textocarta .textocarta__texto {
+  color: #9da1a4;
+}
+
+.contenedor {
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 0.4fr 1fr;
+      grid-template-columns: 0.4fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 00px;
+      grid-template-areas: "contenedoraside contenedormain";
+  width: 70%;
+}
+
+@media screen and (max-width: 1050px) {
+  .contenedor {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .contenedor {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 00px;
+        grid-template-areas: "contenedoraside ." "contenedormain .";
+  }
+}
+
+.contenedor .contenedoraside {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contenedoraside;
+  margin: 10px;
+  padding: 5px;
+}
+
+.contenedor .contenedoraside .carta {
+  margin: 10px;
+  padding: 5px;
+  width: 310px;
+  height: 510px;
+  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor .contenedoraside .carta .carta__link .carta__imagen {
+  width: 300px;
+  height: 500px;
+}
+
+.contenedor .contenedormain {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: contenedormain;
+}
+
+.contenedor .contenedormain h1 {
+  font: normal 50px "Montserrat", sans-serif;
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 100px;
+}
+
+.contenedor .contenedormain .descripción {
+  margin: 15px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor .contenedormain .descripción .descripción__titulo {
+  font: normal 50px "Montserrat", sans-serif;
+  margin: 3px;
+  padding: 5px;
+}
+
+.contenedor .contenedormain .descripción .descripción__nav {
+  padding: 5px;
+  margin: 10px;
+}
+
+.contenedor .contenedormain .descripción .descripción__nav a {
+  margin: 4px;
+  padding: 6px;
+  color: #01bcf2;
+  font: normal 20px "Lato", sans-serif;
+  border-radius: 20%;
+  text-decoration: none;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.contenedor .contenedormain .descripción .descripción__nav a:hover {
+  background-color: #01bcf2;
+  color: #ffffea;
+}
+
+.contenedor .contenedormain .descripción .descripción__text {
+  margin: 6px;
+  padding: 8px;
+  font: normal 20px "Lato", sans-serif;
+  color: #9da1a4;
+}
+
+.contenedor .contenedormain .Ver {
+  padding: 10px;
+  margin: 15px;
+  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor .contenedormain .Ver .lista {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+.contenedor .contenedormain .Ver .lista .lista__elemento {
+  border-radius: 6px;
+  padding: 10px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.contenedor .contenedormain .Ver .lista .lista__elemento .lista__link {
+  text-decoration: none;
+  color: #010b0e;
+}
+
+.contenedor .contenedormain .Ver .lista .lista__elemento:hover {
+  background-color: #01bcf2;
+  color: #ffffea;
+}
+
+.contenedornosotros .contenedornosotros__titulo {
+  font: normal 50px "Montserrat", sans-serif;
+}
+
+.contenedornosotros .contenedornosotros__texto {
+  background-color: #010b0e;
+  font: normal 20px "Lato", sans-serif;
+  color: #9da1a4;
+}
+
+.contenedorcontacto {
+  width: 500px;
+  background-color: #025066;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 6px;
+  color: #ffffea;
+  -webkit-box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 736px) {
+  .contenedorcontacto {
+    width: 300px;
+  }
+}
+
+.contenedorcontacto .formulario .formulario__titulo {
+  font: normal 50px "Montserrat", sans-serif;
+}
+
+.contenedorcontacto .formulario .formulario__controles {
+  font: normal 20px "Lato", sans-serif;
+  color: #ffffea;
+  background-color: #025066;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffea;
+  border-radius: 6px;
+}
+
+.contenedorcontacto .formulario .formulario_boton {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  color: #010b0e;
+  font: normal 20px "Lato", sans-serif;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.contenedorcontacto .formulario .formulario_boton:hover {
+  background-color: #01bcf2;
+  color: #ffffea;
+}
+/*# sourceMappingURL=style.css.map */
