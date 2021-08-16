@@ -10,24 +10,27 @@
   font: normal 50px "Montserrat", sans-serif;
 }
 
-.main ul li a {
-  text-decoration: none;
+.main ul li {
+  border: none;
 }
 
-.main ul li a span img {
+.main ul li a div {
   width: 300px;
   height: 200px;
   overflow: hidden;
-  -webkit-box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
+  -webkit-box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.main ul li a div img {
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 
-.main ul li a span img:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
+.main ul li a div img:hover {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
