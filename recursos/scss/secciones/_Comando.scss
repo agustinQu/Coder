@@ -1,0 +1,116 @@
+//*Comando*//
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    @media screen and (max-width:1050px) {
+        width: 100%;
+    }
+    @media screen and (max-width:736px) {
+        width: 100%;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 00px; 
+        grid-template-areas: 
+        "contenedoraside ."
+        "contenedormain ."; 
+    }
+    margin-left: auto;
+    margin-right: auto;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.4fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 00px; 
+    grid-template-areas: 
+      "contenedoraside contenedormain"; 
+    width: 70%; 
+    .contenedoraside{ 
+        grid-area: contenedoraside;
+        margin: 10px;
+        padding: 5px;
+        .carta{
+            margin: 10px;
+            padding: 5px;
+            width:310px ;
+            height:510px ;
+            box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+            .carta__link{
+                .carta__imagen{
+                    width:300px ;
+                    height:500px ;
+                }
+            }
+        }
+    }
+    .contenedormain{ 
+        grid-area: contenedormain;
+        h1{
+            font: $h1-font;
+            padding: 5px;
+            margin: 10px;
+            margin-bottom: 100px;
+        }
+        .descripción{
+            margin: 15px;
+            margin-bottom: 50px;
+            box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+            .descripción__titulo{
+                font:$h1-font;
+                margin: 3px;
+                padding: 5px;
+            }
+            .descripción__nav{
+                padding: 5px;
+                margin: 10px;
+                a{
+                    margin: 4px;
+                    padding: 6px;
+                    color: $color-link;
+                    font: $p-font;
+                    border-radius: 20%;
+                    text-decoration: none;
+                    transition: .3s ease all;
+                }
+                a:hover{
+                    
+                    background-color:$background-link-hover;
+                    color:$color-link-hover;
+                }
+            }
+            .descripción__text{
+                margin: 6px;
+                padding: 8px;
+                font: $p-font;
+                color: $color-p;
+            }
+        }
+        .Ver{
+            padding: 10px;
+            margin: 15px;
+            box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+            .lista{
+                list-style: none;
+                padding: 10px;
+                margin: 10px;
+                .lista__elemento{
+                    border-radius: 6px;
+                    padding: 10px;
+                    transition: .3s ease all;
+                    .lista__link{
+                        text-decoration: none;
+                        color: $color-link2
+                    }
+                }
+                .lista__elemento:hover{
+                    background-color: $background-link-hover;
+                    color: $color-link-hover;
+                }
+            }
+        }
+ }
+}
