@@ -29,11 +29,18 @@
 }
 
 .main ul li a div img:hover {
-  -webkit-filter: brightness(1.5);
-          filter: brightness(1.5);
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .contenedoraccion .contenedoraccion__titulo {
@@ -63,6 +70,88 @@
 
 .contenedoraccion .contenedoraccion__lista li .textocarta .textocarta__texto {
   color: #9da1a4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedorcontacto {
+  width: 500px;
+  background-color: #025066;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 6px;
+  color: #ffffea;
+  -webkit-box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 736px) {
+  .contenedorcontacto {
+    width: 300px;
+  }
+}
+
+.contenedorcontacto .formulario .formulario__titulo {
+  font: normal 50px "Montserrat", sans-serif;
+}
+
+.contenedorcontacto .formulario .formulario__controles {
+  font: normal 20px "Lato", sans-serif;
+  color: #ffffea;
+  background-color: #025066;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffea;
+  border-radius: 6px;
+}
+
+.contenedorcontacto .formulario .formulario_boton {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  color: #010b0e;
+  font: normal 20px "Lato", sans-serif;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.contenedorcontacto .formulario .formulario_boton:hover {
+  background-color: #01bcf2;
+  color: #ffffea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedornosotros .contenedornosotros__titulo {
+  font: normal 50px "Montserrat", sans-serif;
+}
+
+.contenedornosotros .contenedornosotros__texto {
+  background-color: #010b0e;
+  font: normal 20px "Lato", sans-serif;
+  color: #9da1a4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .contenedor {
@@ -203,67 +292,6 @@
 }
 
 .contenedor .contenedormain .Ver .lista .lista__elemento:hover {
-  background-color: #01bcf2;
-  color: #ffffea;
-}
-
-.contenedornosotros .contenedornosotros__titulo {
-  font: normal 50px "Montserrat", sans-serif;
-}
-
-.contenedornosotros .contenedornosotros__texto {
-  background-color: #010b0e;
-  font: normal 20px "Lato", sans-serif;
-  color: #9da1a4;
-}
-
-.contenedorcontacto {
-  width: 500px;
-  background-color: #025066;
-  padding: 30px;
-  margin: auto;
-  margin-top: 50px;
-  border-radius: 6px;
-  color: #ffffea;
-  -webkit-box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 15px 20px rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (max-width: 736px) {
-  .contenedorcontacto {
-    width: 300px;
-  }
-}
-
-.contenedorcontacto .formulario .formulario__titulo {
-  font: normal 50px "Montserrat", sans-serif;
-}
-
-.contenedorcontacto .formulario .formulario__controles {
-  font: normal 20px "Lato", sans-serif;
-  color: #ffffea;
-  background-color: #025066;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ffffea;
-  border-radius: 6px;
-}
-
-.contenedorcontacto .formulario .formulario_boton {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-  border: none;
-  border-radius: 6px;
-  padding: 10px;
-  color: #010b0e;
-  font: normal 20px "Lato", sans-serif;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-}
-
-.contenedorcontacto .formulario .formulario_boton:hover {
   background-color: #01bcf2;
   color: #ffffea;
 }
