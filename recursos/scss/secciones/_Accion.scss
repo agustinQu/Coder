@@ -1,0 +1,36 @@
+//*Accion*//
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedoraccion{
+    .contenedoraccion__titulo{
+        font: $h1-font;
+    }
+    .contenedoraccion__lista{
+        li{
+            .listalink{
+                .listalink_carta{
+                    overflow: hidden;
+                    box-shadow: 1px 10px 15px rgba(0,0,0,0.50);
+                    img{
+                        overflow: hidden;
+                        border-radius: 5px;
+                        transition: all 500ms ease;
+                    }
+                    img:hover{
+                        filter: brightness(1.1);
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .textocarta{
+                .textocarta__texto{
+                    color: $color-p;
+                }
+            }
+        }
+    }
+}
