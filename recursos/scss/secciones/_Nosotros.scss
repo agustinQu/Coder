@@ -5,11 +5,13 @@
     box-sizing: border-box;
 }
 .contenedornosotros{
+    background-color: $color-link2;
     .contenedornosotros__titulo{
         font: $h1-font;
     }
     .contenedornosotros__texto{
-        background-color: $color-link2;
+        white-space: pre;
+        
         font: $p-font;
         color: $color-p;
     }
