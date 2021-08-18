@@ -1,0 +1,16 @@
+//*Nosotros*//
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedornosotros{
+    .contenedornosotros__titulo{
+        font: $h1-font;
+    }
+    .contenedornosotros__texto{
+        background-color: $color-link2;
+        font: $p-font;
+        color: $color-p;
+    }
+}
