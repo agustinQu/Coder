@@ -208,11 +208,6 @@
           box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.contenedor .contenedoraside .carta .carta__link .carta__imagen {
-  width: 300px;
-  height: 500px;
-}
-
 .contenedor .contenedormain {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
