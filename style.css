@@ -69,7 +69,7 @@
 }
 
 .contenedoraccion .contenedoraccion__lista li .textocarta .textocarta__texto {
-  color: #9da1a4;
+  color: black;
 }
 
 * {
@@ -186,7 +186,8 @@
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     gap: 0px 00px;
-        grid-template-areas: "contenedoraside ." "contenedormain .";
+        grid-template-areas: "contenedoraside ."
+ "contenedormain .";
   }
 }
 
