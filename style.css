@@ -43,6 +43,10 @@
           box-sizing: border-box;
 }
 
+.contenedoraccion {
+  border: none;
+}
+
 .contenedoraccion .contenedoraccion__titulo {
   font: normal 50px "Montserrat", sans-serif;
 }
@@ -186,8 +190,7 @@
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     gap: 0px 00px;
-        grid-template-areas: "contenedoraside ."
- "contenedormain .";
+        grid-template-areas: "contenedoraside ." "contenedormain .";
   }
 }
 
